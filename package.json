@@ -1,0 +1,26 @@
+{
+  "name": "kenchain-groups-platform",
+  "version": "2.7.2",
+  "private": true,
+  "scripts": {
+    "dev": "node --watch backend/server.js",
+    "start": "node backend/server.js",
+    "lint": "node scripts/ui-audit.mjs",
+    "test:search": "node scripts/search-smoke.mjs",
+    "test:startup": "node scripts/startup-smoke.mjs",
+    "test:map-resilience": "node scripts/map-resilience-smoke.mjs",
+    "test:google-maps": "node scripts/google-maps-smoke.mjs",
+    "test:google-places": "node scripts/google-places-poi-smoke.mjs",
+    "test:udupi-beaches": "node scripts/map-resilience-smoke.mjs",
+    "test:india-search": "node scripts/india-search-smoke.mjs",
+    "test:all": "npm run lint && npm run test:startup && npm run test:map-resilience && npm run test:google-maps && npm run test:google-places && npm run test:india-search && npm run test:india-search-api",
+    "test:india-search-api": "node scripts/india-search-api-smoke.mjs"
+  },
+  "dependencies": {
+    "pg": "^8.16.3"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "type": "module"
+}

@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 360" role="img" aria-label="Beaches destination artwork">
+ <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f5c56a"/><stop offset="1" stop-color="#188c9a"/></linearGradient><radialGradient id="glow"><stop stop-color="#fff" stop-opacity=".34"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient></defs>
+ <rect width="520" height="360" rx="26" fill="url(#bg)"/><circle cx="410" cy="75" r="125" fill="url(#glow)"/><circle cx="90" cy="70" r="45" fill="#fff" opacity=".12"/><path d="M0 305Q105 268 205 304T520 295V360H0Z" fill="#102a36" opacity=".15"/>
+ <g fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity=".92"><path d="M80 260Q170 215 260 260T440 260V340H80Z"/><path d="M70 205Q130 170 190 205T310 205T450 205"/><circle cx="360" cy="112" r="42"/><path d="M80 300Q170 280 260 300T440 300"/></g></svg>

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="theme-color" content="#0d1722"/><meta name="description" content="Tours, adventure activities, hospitality and doorstep delivery in one place."/>
+  <title>Kenchain Groups | Tours, hospitality, adventure & delivery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body><div id="root"><div class="boot-screen"><span class="boot-logo">K</span><b>Kenchain Groups</b><small>Getting things moving...</small></div></div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script>
+  // Keep the boot screen useful if the app module cannot be downloaded or evaluated.
+  window.showKenchainBootError = function (message) {
+    const root = document.getElementById('root');
+    const screen = root && root.querySelector('.boot-screen');
+    if (!screen) return;
+    screen.innerHTML = '<span class="boot-logo">K</span><b>Kenchain Groups</b>' +
+      '<small role="alert">' + message + '</small>' +
+      '<button type="button" onclick="window.location.reload()" style="margin-top:16px;padding:11px 18px;border:0;border-radius:10px;background:#d0f36b;color:#152328;font-weight:800;cursor:pointer">Retry</button>';
+  };
+  window.kenchainBootTimer = window.setTimeout(function () {
+    window.showKenchainBootError('The app is taking too long to start. Check that the server is running, then retry.');
+  }, 12000);
+</script>
+<script type="module" src="/app.js" onload="clearTimeout(window.kenchainBootTimer)" onerror="window.showKenchainBootError('The application script could not load. Check the server and refresh this page.')"></script>
+</body>
+</html>
