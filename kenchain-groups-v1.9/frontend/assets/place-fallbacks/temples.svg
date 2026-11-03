@@ -1,4 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 360" role="img" aria-label="Temples destination artwork">
- <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ff9a62"/><stop offset="1" stop-color="#7d4b56"/></linearGradient><radialGradient id="glow"><stop stop-color="#fff" stop-opacity=".34"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient></defs>
- <rect width="520" height="360" rx="26" fill="url(#bg)"/><circle cx="410" cy="75" r="125" fill="url(#glow)"/><circle cx="90" cy="70" r="45" fill="#fff" opacity=".12"/><path d="M0 305Q105 268 205 304T520 295V360H0Z" fill="#102a36" opacity=".15"/>
- <g fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity=".92"><path d="M170 300V180l100-80 100 80v120M205 300V190h130v110M185 190h170M225 300v-82h90v82M250 174v-35h40v35"/><path d="M140 300h260M160 180h220M240 100h60"/></g></svg>
